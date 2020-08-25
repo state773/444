@@ -2,10 +2,10 @@ import telebot
 
 bot = telebot.TeleBot('1397379259:AAHAySIECvo6kXDY7FC90vbNXQ6U9HIVcQ4')
 
+
 @bot.message_handler(comands=["start"])
 def start_message(message):
     bot.send_message(message.chat.id, 'все спортцмены на месте')
-
 
 
 @bot.message_handler(content_types=['text'])
